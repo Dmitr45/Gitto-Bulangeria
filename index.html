@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ширина контента строго равна ширине девайса -->
+    <title>Жито bulangeria</title>
+    <link href="css/style.css" rel="stylesheet"> <!-- подгружаем все стили -->
+    <script src="js/main.js" defer></script> <!-- defer для полной загрузки DOM перед скриптом -->
+</head>
+<body>
+
+<!-- HEADER ======================================     -->
+<header class="header">
+    <div class="header__content _container">
+        <div class="logo"><h1>Жито bulangeria</h1></div>
+        <div class="header__menu menu">
+            <nav class="menu__body">
+                <div class="menu__list">
+                    <a href="#about" class="menu__link">О нас<p></p></a>
+                    <a href="#product" class="menu__link">Выпечка<p></p></a>
+                    <a href="" class="menu__link">Отзывы<p></p></a>
+                </div>
+            </nav>
+        </div>
+        <a href="#contact"><div class="button_contact">
+        <span>Contact</span>
+        </div></a>
+        </div>
+    <section id="Presentation" class="_container">  
+        <div class="elem_text">
+            <div class="img_background"><img class="shape" src="img/Combined Shape.png"> <img class="sngegg" src="img/pngegg.png"></div>
+            <div class="pres_date">Французские традиции 1984</div>
+            <div class="pres_title">С пылу, с жару!</div>
+            <div class="pres_info">Именно аромат домашней выпечки (пирожков, булочек, домашней пиццы, печенья) делает наш дом по-настоящему уютным.  Отличный вариант для семейного завтрака в любой день.</div>
+            
+        </div>
+        <div class="elem_pic">
+            <img src="../img/baker.jpg" alt="Пекарь">
+           <!--  <img src="../img/cafe.jpeg" alt="Кафе"> -->
+        </div>
+    </section>
+</header>
+<main>
+
+<!-- ABOUT ======================================     -->
+<section class="about _container" id="about">
+    <div class="about_pic">
+        <img src="img/about/baguette.png" alt="baguette">
+        <img src="img/about/loaf.png" alt="loaf">
+        <img src="img/contact/Combined Shape.png" alt="CShape">
+        <img src="img/contact/Shape.png" alt="Shape">
+        <img src="img/Combined Shape.png" alt="C2Shape">
+    </div>
+    <div class="about_content">
+        <div class="pretitle">О нас</div>
+        <div class="title">Настоящая французская пекарня</div>
+        <div class="content"><p>Тимофей и Ирина увлеклись хлебопечением после того, как поняли, что в Новосибирске нереально купить такие багеты, как во Франции. «Жито» родилась из семейного увлечения. Супруги, поездив по миру и попробовав разный хлеб, занялись домашним хлебопечением. Этот мир оказался настолько увлекательным, что захотелось погрузиться в него ещё глубже.</p>
+                    <p>В пекарне «Жито» сейчас пекут с десяток видов хлеба, несколько бриошей (сдобные булочки) и печенье. Вся продукция подходит под определение artisanal, которое отличает во Франции действительно хорошую пекарню от обычной (где могут использовать и замороженные полуфабрикаты).
+            Здесь можно купить и классический багет, но в основном это вполне авторские рецептуры, пусть и разработанные на основе мирового опыта. Базовых ингредиентов вроде немного (пшеничная и ржаная мука, солод, разные семечки и орехи), но, комбинируя их так и эдак, можно получить огромное разнообразие. </p>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES ======================================     -->
+<section class="features">
+<div class="pretitle _center">Наши особенности</div>
+<div class="title _center">Продукт испеченный с любовью</div>
+<div class="content">Секрет пекарни «Жито» — в муке. Она отечественная (рестораны, которые хотят сделать что-то более впечатляющее, вынуждены использовать импортную — французскую или итальянскую, килограмм которой даже в опте сейчас может стоить рублей 300). Тимофей говорит, что хороший хлеб можно сделать и из алтайской пшеницы, нужно только знать — как. Потому что просто взять с полки супермаркета пакет с мукой недостаточно. Тесто в пекарне выдерживают двое суток. Это долго, зато именно так получается хлеб, мякиш которого остается эластичным и вкусным даже через пару-тройку дней. Зерно сложно устроено, у него несколько слоев, которые на хорошей мельнице уходят в разные емкости. Это как бы кирпичики с разными свойствами, из которых можно собрать уже конечный продукт для хлебопека под его задачи.</div>
+</section>
+
+<!-- Products ======================================     -->
+<section class="product" id="product">
+    <div class="wrapper _container">
+        <div class="pretitle _center">Наши продукты</div>
+        <div class="title _center">Свежая выпечка каждое утро</div>
+        <div class="product-grid">
+            <div id="item-0"><div class="pic">
+            <video controls width="410" height="730">
+                <source src="img/product/video.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+            </video></div><div class="content"></div></div>
+            <div id="item-1"><div class="pic"></div><div class="content"><div class="item_pretitle">Хлеб</div><div class="item_title">Хлеб из печи</div></div></div>
+            <div id="item-2"><div class="pic"></div><div class="content"><div class="item_pretitle">Хлеб</div><div class="item_title">Солнечный багет</div></div></div>
+            <div id="item-3"><div class="pic"></div><div class="content"><div class="item_pretitle">Сдоба</div><div class="item_title">Бриоши сливочные</div></div></div>
+            <div id="item-4"><div class="pic"></div><div class="content"><div class="item_pretitle">Сдоба</div><div class="item_title">Цветок</div></div></div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Testimonials ======================================     -->
+
+
+
+
+
+
+
+<!-- CONTACT ======================================     -->
+<div class="_container">
+<section class="contact" id="contact">
+    <div class="contact_pic">
+        <img src="img/contact/Combined Shape.png" alt="Shape">
+         <img src="img/contact/Bread.png" alt="Bread"> 
+       <!-- <img src="img/contact/door.jpeg" alt="Bread"> -->
+        <img src="img/contact/Shape-1.png" alt="S1">
+        <img src="img/contact/Shape.png" alt="S2">
+    </div>
+    <div class="contact_content">
+        <div class="pretitle">Нас легко найти</div>
+        <div class="title">Заходите пробовать!</div>
+        <div class="data">
+            <div class="address_icon"><div><img src="img/contact/Address.png" alt=""></div></div>
+            <div class="address">
+                <span class="pretitle">01</span> <br>
+                <span class="pretitle">Адрес</span><br>
+                <span class="content">Нижняя зона Академгородка м-н, Советский район, Новосибирск, ​Вяземская, 3, 630117</span>
+            </div>
+            <div class="address_icon"><div><img src="img/contact/Address.png" alt=""></div></div>
+            <div class="address">
+                <span class="pretitle">02</span> <br>
+                <span class="pretitle">Адрес</span><br>
+                <span class="content">Центральный район, Новосибирск, Некрасова, 41, 630005</span>
+            </div>
+        </div>
+    </div>
+</section></div>
+</main>
+
+<!-- FOOTER ======================================     -->
+<footer class="_container">
+    <section class="footer_menu _container">
+        <div class="col_1"><span class="col_title">Меню</span>
+                <p><a href="#about">О нас</a></p>
+                <p><a href="#product">Выпечка</a></p>
+                <p>Отзывы</p>
+                <p><a href="#contact" >Контакты</a></p>
+            </div>
+        <div class="col_2"><span class="col_title">Услуги</span>
+            <p>Выпекаем</p>
+            <p>Доставляем</p>
+            <p>Оставляем</p>
+            <p>Вакансии</p>
+        </div>
+        <div class="col_3"><span class="col_title">Мы в социальных сетях</span><br>
+            <div class="soc_icon"><img src="img/facebook.png" alt="F"></div>
+            <div class="soc_icon"><img src="img/twitter.png" alt="T"></div>
+            <div class="soc_icon"><img src="img/instagram.png" alt="I"></div>
+        </div>
+    </section>
+    <section class="footer_copyright _container">
+        <div class="copyright"><span>Copyright © <a href="http://pletnevd.com/" target="blank">Pletnev Dmitry</a> 2022 - </span> <span>2022</span> <span> All Rights Reserved</span></div>
+        <div class="policy"><span>Политика конфиденциальности</span></div>
+    </section>
+</footer>
+</body>
+</html>
