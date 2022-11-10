@@ -1,5 +1,6 @@
 @import "reset";
 @import "fonts";
+@import "slider";
 
 
 // Переменные
@@ -80,11 +81,6 @@ p{
 }
 
 
-
-a{
-  //text-decoration: underline $colorButton;
-}
-
 ._container{
     margin: 0 auto;
     width: 1440px;
@@ -129,8 +125,6 @@ section{
 
 .menu{
 flex: 1 1 500px;
-    &__body{
-    }
     &__list {
     display: flex;
     }
@@ -518,6 +512,14 @@ margin-left: 135px;
             border: #FFF 1px solid;
           }
               }
+  }
+}
+
+//Testimonials =================================
+.testimonial{
+  .testimonial_slider{
+    margin-top: 53px;
+    
   }
 }
 

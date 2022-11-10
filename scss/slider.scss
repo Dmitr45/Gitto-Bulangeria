@@ -1,0 +1,58 @@
+// Общие свойства всех слайдеров на странице
+
+/* Слайдер */ .slick-slider{}
+/* Слайдер запущен */ .slick-slider.slick-initialized{}
+/* Слайдер с точками */ .slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */ .slick-list { overflow: hidden;}
+/* Лента слайдов */ .slick-track{ display: flex; align-items: flex-end; }
+/* Слайд */ .slick-slide{}
+/* Слайд активный (показывается) */ .slick-slide.slick-active{ background-color: #FFF;  height: 368px; }
+/* Слайд основной */ .slick-slide.slick-current{    background-color: #FBB65F; height: 400px; }
+/* Слайд по центру */ .slick-slide.slick-center{}
+/* Клонированный слайд */ .slick-slide.slick-cloned{}
+/* Стрелка */ .slick-arrow{}
+/* Стрелка влево */ .slick-arrow.slick-prev{}
+/* Стрелка вправо */ .slick-arrow.slick-next{}
+/* Стрелка не активная */ .slick-arrow.slick-disabled{}
+/* Точки (булиты) */ .slick-dots{} .slick-dots li{}
+/* Активная точка */ .slick-dots li.slick-active{}
+/* Элемент точки */ .slick-dots li button{}
+
+.slick-dots{
+    li{
+        background-color: #9EAD8D;
+        width: 8px;
+        height: 8px;  
+    }
+}
+
+
+.slide{
+    block-size: auto;
+    width: 300px;
+    height: 300px;
+    padding-left: 48px;
+    padding-right: 48px;
+    .slide_header{
+        padding-top: 48px;
+
+    .stars{
+        display: inline-block;
+        block-size: auto;
+        width: 45%;
+    }
+
+    .pic{
+        display: inline-block;
+        text-align: center;
+        block-size: auto;
+        width: 45%;
+        img{
+        width: 102px;
+        height: 102px;
+        border-radius: 50%;
+    }
+    }
+    }
+}
+
