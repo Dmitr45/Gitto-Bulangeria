@@ -4,10 +4,10 @@
 /* Слайдер запущен */ .slick-slider.slick-initialized{}
 /* Слайдер с точками */ .slick-slider.slick-dotted{}
 /* Ограничивающая оболочка */ .slick-list { overflow: hidden;}
-/* Лента слайдов */ .slick-track{ display: flex; align-items: flex-end; }
+/* Лента слайдов */ .slick-track{ display: flex; align-items: center; }
 /* Слайд */ .slick-slide{}
 /* Слайд активный (показывается) */ .slick-slide.slick-active{ background-color: #FFF;  height: 368px; }
-/* Слайд основной */ .slick-slide.slick-current{    background-color: #FBB65F; height: 400px; }
+/* Слайд основной */ .slick-slide.slick-current{   }
 /* Слайд по центру */ .slick-slide.slick-center{}
 /* Клонированный слайд */ .slick-slide.slick-cloned{}
 /* Стрелка */ .slick-arrow{}
@@ -27,32 +27,4 @@
 }
 
 
-.slide{
-    block-size: auto;
-    width: 300px;
-    height: 300px;
-    padding-left: 48px;
-    padding-right: 48px;
-    .slide_header{
-        padding-top: 48px;
-
-    .stars{
-        display: inline-block;
-        block-size: auto;
-        width: 45%;
-    }
-
-    .pic{
-        display: inline-block;
-        text-align: center;
-        block-size: auto;
-        width: 45%;
-        img{
-        width: 102px;
-        height: 102px;
-        border-radius: 50%;
-    }
-    }
-    }
-}
 

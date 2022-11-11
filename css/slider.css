@@ -10,7 +10,7 @@
 /* Лента слайдов */
 .slick-track {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 /* Слайд */
@@ -21,11 +21,6 @@
 }
 
 /* Слайд основной */
-.slick-slide.slick-current {
-  background-color: #FBB65F;
-  height: 400px;
-}
-
 /* Слайд по центру */
 /* Клонированный слайд */
 /* Стрелка */
@@ -39,31 +34,4 @@
   background-color: #9EAD8D;
   width: 8px;
   height: 8px;
-}
-
-.slide {
-  block-size: auto;
-  width: 300px;
-  height: 300px;
-  padding-left: 48px;
-  padding-right: 48px;
-}
-.slide .slide_header {
-  padding-top: 48px;
-}
-.slide .slide_header .stars {
-  display: inline-block;
-  block-size: auto;
-  width: 45%;
-}
-.slide .slide_header .pic {
-  display: inline-block;
-  text-align: center;
-  block-size: auto;
-  width: 45%;
-}
-.slide .slide_header .pic img {
-  width: 102px;
-  height: 102px;
-  border-radius: 50%;
 }

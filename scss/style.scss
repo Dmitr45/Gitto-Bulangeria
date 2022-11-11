@@ -519,10 +519,49 @@ margin-left: 135px;
 .testimonial{
   .testimonial_slider{
     margin-top: 53px;
-    
+    .slide {
+      block-size: auto;
+      width: 300px;
+      height: 300px;
+      padding-left: 48px;
+      padding-right: 48px;
+      &_header{
+        padding-top: 48px;
+        .stars{
+          display: inline-block;
+          block-size: auto;
+          width: 10%;
+              }
+        
+        .pic{
+        display: inline-block;
+        text-align: center;
+        block-size: auto;
+        width: 90%;
+        img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+          }
+        &::before{
+        padding-right: 84px;
+        content: url('../img/testimonial/Star.svg') url('../img/testimonial/Star.svg') url('../img/testimonial/Star.svg') url('../img/testimonial/Star.svg') url('../img/testimonial/Star.svg');
+        }
+        }
+      }
+    }
+  .slick-current {
+    background-color: #FBB65F;
+    height: 400px;
   }
+  .slick-current .pic{
+    padding-top: 16px;
+  }
+  .slick-current  .pic::before{ 
+          content: url('../img/testimonial/StarC.svg') url('../img/testimonial/StarC.svg') url('../img/testimonial/StarC.svg') url('../img/testimonial/StarC.svg') url('../img/testimonial/StarC.svg');
+        }}
+      
 }
-
 //Contact ======================================
   .contact{
     display: flex;
