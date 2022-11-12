@@ -3026,11 +3026,12 @@ sliderJQ();
 $(document).ready(function(){
 
 $('.testimonial_slider').slick({
-    arrows: false,
+    arrows: true,
+    dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 4000,
     centerMode: true,
     centerPadding: '0px',
 });});

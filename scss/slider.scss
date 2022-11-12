@@ -1,12 +1,12 @@
 // Общие свойства всех слайдеров на странице
 
-/* Слайдер */ .slick-slider{}
+/* Слайдер */ .slick-slider{ }
 /* Слайдер запущен */ .slick-slider.slick-initialized{}
 /* Слайдер с точками */ .slick-slider.slick-dotted{}
 /* Ограничивающая оболочка */ .slick-list { overflow: hidden;}
 /* Лента слайдов */ .slick-track{ display: flex; align-items: center; }
-/* Слайд */ .slick-slide{}
-/* Слайд активный (показывается) */ .slick-slide.slick-active{ background-color: #FFF;  height: 368px; }
+/* Слайд */ .slick-slide{height: 368px;}
+/* Слайд активный (показывается) */ .slick-slide.slick-active{  }
 /* Слайд основной */ .slick-slide.slick-current{   }
 /* Слайд по центру */ .slick-slide.slick-center{}
 /* Клонированный слайд */ .slick-slide.slick-cloned{}
@@ -18,13 +18,6 @@
 /* Активная точка */ .slick-dots li.slick-active{}
 /* Элемент точки */ .slick-dots li button{}
 
-.slick-dots{
-    li{
-        background-color: #9EAD8D;
-        width: 8px;
-        height: 8px;  
-    }
-}
 
 
 
