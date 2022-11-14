@@ -402,36 +402,6 @@ textarea {
   src: url("../fonts/noto-sans-v27-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
   src: local(""), url("../fonts/noto-sans-v27-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-v27-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/noto-sans-v27-latin_cyrillic-regular.woff") format("woff"), url("../fonts/noto-sans-v27-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/noto-sans-v27-latin_cyrillic-regular.svg#NotoSans") format("svg"); /* Legacy iOS */
 }
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-/* Ограничивающая оболочка */
-.slick-list {
-  overflow: hidden;
-}
-
-/* Лента слайдов */
-.slick-track {
-  display: flex;
-  align-items: center;
-}
-
-/* Слайд */
-.slick-slide {
-  height: 368px;
-}
-
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
-/* Стрелка влево */
-/* Стрелка вправо */
-/* Стрелка не активная */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
 html {
   font-family: "Noto Sans";
   font-size: 16px;
@@ -896,6 +866,25 @@ main .product .wrapper #item-4 {
 main .product .wrapper #item-4:hover {
   border: #FFF 1px solid;
 }
+main .testimonial {
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
 main .testimonial .wrapper {
   position: relative;
 }
@@ -1020,6 +1009,16 @@ main .testimonial .button2gis {
 }
 main .testimonial .button2gis:hover {
   opacity: 1;
+}
+main .testimonial .slick-list {
+  overflow: hidden;
+}
+main .testimonial .slick-track {
+  display: flex;
+  align-items: center;
+}
+main .testimonial .slick-slide {
+  height: 368px;
 }
 main .contact {
   display: flex;
@@ -1157,20 +1156,29 @@ footer .footer_menu .col_3 .soc_icon {
   text-align: center;
   cursor: pointer;
 }
-footer .footer_menu .col_3 .soc_icon img[alt=F] {
+footer .footer_menu .col_3 .soc_icon svg[index=F] {
   height: 16px;
   width: 9.33px;
   padding-top: 5px;
+  fill: #FFF;
 }
-footer .footer_menu .col_3 .soc_icon img[alt=I] {
+footer .footer_menu .col_3 .soc_icon svg[index=I] {
   height: 16px;
   width: 13px;
   padding-top: 5px;
+  fill: #FFF;
 }
-footer .footer_menu .col_3 .soc_icon img[alt=T] {
+footer .footer_menu .col_3 .soc_icon svg[index=T] {
   height: 16px;
   width: 16px;
   padding-top: 5px;
+  fill: #FFF;
+}
+footer .footer_menu .col_3 .soc_icon svg[index=V] {
+  height: 16px;
+  width: 16px;
+  padding-top: 5px;
+  fill: #FFF;
 }
 footer .footer_copyright {
   height: 111px;

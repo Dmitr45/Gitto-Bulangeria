@@ -1,6 +1,5 @@
 @import "reset";
 @import "fonts";
-@import "slider";
 
 
 // Переменные
@@ -8,9 +7,9 @@ $fontFamily: "Noto Sans";  //шрифт
 $minWidth: 320px;
 $maxWidth: 1440px;
 $maxWidthContainer: 1158px;
-$colorText:  #333333; //#FFFFFF;
-$colorButton: #e52e56; //#b7070b; //#FF8700;
-$colorBackground: #FFF; // #130F15;
+$colorText:  #333333;
+$colorButton: #e52e56; 
+$colorBackground: #FFF; 
 $fontSizeText: 16px;
 $md1: $maxWidthContainer+12px; // Брекпоинты для медиазапросов
 $md2000: 2000px;
@@ -645,7 +644,25 @@ margin-left: 135px;
         }
       }
 
+// Общие свойства всех слайдеров на странице
 
+/* Слайдер */ .slick-slider{ }
+/* Слайдер запущен */ .slick-slider.slick-initialized{}
+/* Слайдер с точками */ .slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */ .slick-list { overflow: hidden;}
+/* Лента слайдов */ .slick-track{ display: flex; align-items: center; }
+/* Слайд */ .slick-slide{height: 368px;}
+/* Слайд активный (показывается) */ .slick-slide.slick-active{  }
+/* Слайд основной */ .slick-slide.slick-current{   }
+/* Слайд по центру */ .slick-slide.slick-center{}
+/* Клонированный слайд */ .slick-slide.slick-cloned{}
+/* Стрелка */ .slick-arrow{}
+/* Стрелка влево */ .slick-arrow.slick-prev{}
+/* Стрелка вправо */ .slick-arrow.slick-next{}
+/* Стрелка не активная */ .slick-arrow.slick-disabled{}
+/* Точки (булиты) */ .slick-dots{} .slick-dots li{}
+/* Активная точка */ .slick-dots li.slick-active{}
+/* Элемент точки */ .slick-dots li button{}
         
 }
 //Contact ======================================
@@ -790,20 +807,30 @@ footer {
           display: inline-block;
           text-align: center;
           cursor: pointer;
-          img[alt="F"]{
+          svg[index="F"]{
             height: 16px;
             width: 9.33px;
             padding-top: 5px;
+            fill: #FFF;
           }
-          img[alt="I"]{
+          svg[index="I"]{
             height: 16px;
             width: 13px;
             padding-top: 5px;
+            fill: #FFF;
           }
-          img[alt="T"]{
+          svg[index="T"]{
             height: 16px;
             width: 16px;
             padding-top: 5px;
+            fill: #FFF;
+          }
+
+          svg[index="V"]{
+            height: 16px;
+            width: 16px;
+            padding-top: 5px;
+            fill: #FFF;
           }
 
         }
