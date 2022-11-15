@@ -3034,4 +3034,29 @@ $('.testimonial_slider').slick({
     autoplaySpeed: 4000,
     centerMode: true,
     centerPadding: '0px',
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });});
