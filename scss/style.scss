@@ -63,6 +63,7 @@ p{
   block-size: auto;
   @media (max-width: $md1440) {padding-left: 50px; padding-right: 50px;}
   @media (max-width: $md1000) {padding-left: 30px; padding-right: 30px; text-align: center; }
+  @media (max-width: $md500) {font-size: 28px}
 } 
 
 @mixin font_sans($fs) {
@@ -97,7 +98,7 @@ section{
     @media (max-width: $md1440){  width: 100vw;  min-width: $md1000;}
     @media (max-width: $md1000){  width: 100vw;  min-width: $md760;}
     @media (max-width: $md760) {  width: 100vw;  min-width: $md500;}
-    @media (max-width: $md500) {  width: 100vw;  min-width: 300px; }    
+    @media (max-width: $md500) {  width: 100vw;  min-width: 400px; }    
 }
 
 .rotateY180{  transform: rotateY(180deg);  }
@@ -451,6 +452,12 @@ main{
           grid-template-rows: 352px 352px 352px 352px;
           grid-template-columns: 270px 270px;
         }
+        @media (max-width: $md500) {
+          grid-template-rows: 400px 300px 300px 300px 300px 300px;
+          grid-template-columns: 100%;
+          margin: 69px 0 0 0;
+          width: 100%;
+        }
         .item_title{
           @include font_sans(20);
           color:#000;
@@ -474,6 +481,7 @@ main{
               flex: 0 0 144px;
               max-height: 144px;
               background-color: #FFF;
+              @media (max-width: $md500) { flex: 0 0 100px; max-height: 100px;}
               .pretitle, .title, .content{
               padding: 15px;
               }
@@ -486,6 +494,12 @@ main{
           grid-column-start: 1;
           grid-row-end: 3;
           grid-column-end: 3;
+          @media (max-width: $md500) {
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-row-end: 3;
+            grid-column-end: 2;
+          }
 
           .pic{
             padding-left: 112px;
@@ -512,6 +526,12 @@ main{
             grid-row-end: 4;
             grid-column-end: 2;
           }
+          @media (max-width: $md500) {
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-row-end: 4;
+            grid-column-end: 2;
+          }
           &:hover{
             border: #FFF 1px solid;
           }
@@ -532,6 +552,12 @@ main{
             grid-row-end: 4;
             grid-column-end: 3;
           }
+          @media (max-width: $md500) {
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-row-end: 5;
+            grid-column-end: 2;
+          }
           &:hover{
             border: #FFF 1px solid;
           }
@@ -550,6 +576,12 @@ main{
             grid-row-start: 4;
             grid-column-start: 1;
             grid-row-end: 5;
+            grid-column-end: 2;
+          }
+          @media (max-width: $md500) {
+            grid-row-start: 5;
+            grid-column-start: 1;
+            grid-row-end: 6;
             grid-column-end: 2;
           }
           &:hover{
@@ -572,6 +604,12 @@ main{
             grid-row-end: 5;
             grid-column-end: 3;
           }
+          @media (max-width: $md500) {
+            grid-row-start: 6;
+            grid-column-start: 1;
+            grid-row-end: 7;
+            grid-column-end: 2;
+          }
           &:hover{
             border: #FFF 1px solid;
           }
@@ -585,16 +623,17 @@ main{
       position: relative;
       .slick-arrow{
         position: absolute;
-        top: 400px;
+        top: 53%;
         background: none;
         width: 30px;
         height: 30px;
         color: #FBB65F;
         border: none;
         font-size: 54px;
+        @media (max-width: $md1440) {color: #F5D3AB; top: 53%;}
               }
         .slick-next{
-          right: 0px;
+          right: 25px;
           z-index: 50;
         }
         .slick-prev{
@@ -606,6 +645,7 @@ main{
           width: 300px;
           text-align: center;
           height: 16px;
+          @media (max-width: $md500) {margin-top: 20px;}
           li{
             display: inline-block;
             width: 8px;
@@ -636,7 +676,9 @@ main{
     background-color: #FBB65F;
     height: 422px;
     width: 400px;
+    @media (max-width: $md1440) { display: none;}
     }} 
+
   .testimonial_slider{
     margin-top: 53px;
     .slide {
@@ -645,11 +687,7 @@ main{
       height: 400px;
       padding-left: 48px;
       padding-right: 48px;
-      @media (max-width: 1439) {
-
-
-      }
-
+      @media (max-width: $md1440) {    background-color: #FBB65F;}
       &_header{
         padding-top: 48px;
         height: 102px;
@@ -661,9 +699,11 @@ main{
         
         .pic{
         display: inline-block;
-        text-align: center;
+        margin-left: 100px;
         block-size: auto;
         width: 90%;
+        @media (max-width: $md1440) {text-align: center;}
+        @media (max-width: $md500) {margin-left: 5px;}
         img{
         width: 60px;
         height: 60px;
@@ -680,6 +720,11 @@ main{
           margin-left: 48px;
           width: 105px;
           height: 64px;
+          @media (max-width: $md1440) {
+            width: 80vw;
+            text-align: center;
+            margin-left: 0;
+          }
         }
     
         &_info {
@@ -689,6 +734,12 @@ main{
           width: 306px;
           height: 102px;
           opacity: 0.5;
+          @media (max-width: $md1440) {
+            width: 80vw;
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+          }
         }
     }
   .slick-current  .pic::before{ 
@@ -698,13 +749,13 @@ main{
 
       .button2gis {
         
-        width: 180px;
+        width: 300px;
         height: 108px;
-        margin: 20px 0 0 100px;
+        margin: 20px 0 0 30px;
         border-radius: 9px;
         cursor: pointer;
         background-image: url(../img/testimonial/button2gis.png);
-        background-size: 180px 108px;
+        background-size: 250px 108px;
         border: none;
         opacity: 0.7;
         transition:   opacity 0.3s ;
@@ -811,7 +862,9 @@ main{
             z-index: 1;
           }
         }
-
+        @media (max-width: 1100px) {
+          display: none;
+        }
 
       }
 
@@ -820,51 +873,30 @@ main{
     .contact_content{
       flex: 0 0 720px;
       max-width: 720px;
-      @media(max-width: $md1440) { flex: 1 0 400px; max-width: 600px; margin-left: 40px; }
+      @media(max-width: $md1440) { flex: 1 0 400px; max-width: 800px; margin-left: 40px; }
+      @media(max-width: $md500) {margin-left: 0px; flex: 1 0 300px; }
     .data{
       display: flex;
       flex-flow: row wrap;
       justify-content: space-around;
-      margin-top: 62px;
-      .address_icon{
-        flex: 0 0 50px;
-        div{
-          width: 48px;
-          height: 48px;
-          border-radius: 50%;
-          background-color: #171B1B;
-          text-align: center;
-        }
-        img{
-          padding-top: 12px;
-          width: 16px;
-          height: 24px;
-        }
-      }
       .address{
-        flex: 1 1 150px;
-        max-width: 300px;
-
+        flex: 0 1 250px;
+        max-width: 600px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 62px;
       }
-      .phone_icon{
-        flex: 0 0 50px;
-        div{
-          width: 48px;
-          height: 48px;
-          border-radius: 50%;
-          background-color: #171B1B;
-          text-align: center;
-        }
-        img {
-        width: 22px;
-        height: 24px;
-        padding-top: 12px;
-        }
-        }
-      .phone{
-        flex: 1 1 150px;
-        max-width: 200px;
-
+      .address::before{
+        content: "";
+        display: block;
+        background-image: url("../img/contact/Address.png");
+        background-repeat: no-repeat;
+        background-size: 16px 24px;
+        background-position: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: #171B1B;
       }
     }
     }
@@ -876,7 +908,6 @@ main{
 footer {
   background-color: #000;
   .footer_menu {
-    height: 320px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -957,10 +988,11 @@ footer {
     font-family: 'Noto Sans';
     font-size: 16px;
     line-height: 32px;
+    margin-top: 50px;
     .copyright {
       flex: 0 0 500px;
       text-align: left;
-      height: 50px;
+      min-height: 50px;
       max-width: 500px;
       padding-left: 135px;
       padding-top: 25px;
@@ -968,14 +1000,17 @@ footer {
         color: hsla(0, 0%, 100%, 0.5);
         text-decoration: underline;
       }
+      @media (max-width: $md500) { padding: 30px; height: 100px;     flex: 0 0 300px;}
 
     }
     .policy {
+      display: none;
       flex: 1 0 400px;
       text-align: right;
-      height: 50px;
+      min-height: 50px;
       padding-right: 135px;
       padding-top: 25px;
+      @media (max-width: $md500) {  height: 100px;      flex: 1 0 300px;}
       }
   }
 

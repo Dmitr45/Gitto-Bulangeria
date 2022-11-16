@@ -3036,7 +3036,7 @@ $('.testimonial_slider').slick({
     centerPadding: '0px',
     responsive: [
         {
-            breakpoint: 1000,
+            breakpoint: 1440,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -3055,7 +3055,9 @@ $('.testimonial_slider').slick({
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
             }
         }
     ]
