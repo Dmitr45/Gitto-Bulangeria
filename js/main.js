@@ -3030,7 +3030,7 @@ $('.testimonial_slider').slick({
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     centerMode: true,
     centerPadding: '0px',
@@ -3041,18 +3041,12 @@ $('.testimonial_slider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: true,
+                arrows: true
             }
         },
         {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
+            breakpoint: 400,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
