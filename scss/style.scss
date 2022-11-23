@@ -26,7 +26,7 @@ html{
   font-size: $fontSizeText;
   color: $colorText;
   background-color:  $colorBackground;
-  min-width: 99vw;
+  min-width: 280px;
   scroll-behavior: smooth; // Плавная прокрутка документа
     margin: 0 auto;
 }
@@ -88,6 +88,11 @@ p{
 ._center{
   text-align: center;
 }
+._flex_center{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 section{
   margin-top: 150px;
@@ -101,7 +106,7 @@ section{
     @media (max-width: $md1440){  width: 100vw;  min-width: $md1000;}
     @media (max-width: $md1000){  min-width: $md760;}
     @media (max-width: $md760) {  min-width: $md500;}
-    @media (max-width: $md500) {  min-width: 400px; } 
+    @media (max-width: $md500) {  min-width: 280px; } 
     @media (max-width: $md300) {  min-width: 280px; }   
 }
 
@@ -115,7 +120,7 @@ section{
 header{
   height: 863px;
   @media (max-width: $md1000) {height: 1120px;}
-  @media (max-width: $md300)  {height: 910px;}
+  @media (max-width: $md500)  {height: 910px;}
 }
 
 nav{
@@ -133,7 +138,7 @@ nav{
   font-size: 35px;
   line-height: 40px;
   font-weight: 600;
-  @media (max-width: $md300) { 
+  @media (max-width: $md500) { 
   flex: 0 0 280px;
   font-size: 28px;
   text-align: center;} 
@@ -171,8 +176,11 @@ flex: 0 0 470px;
             width: 100%;
 }
         }
-        @media (max-width: $md300) {
+        @media (max-width: $md500) {
           flex: 0 0 280px;
+        };
+        @media (max-width: 280px) {
+          flex: 0 0 200px;
         };
     }
 
@@ -281,7 +289,7 @@ flex: 0 0 470px;
       transition: top 0.5s;
       @media (max-width: $md1440){ left: 450px;}
       @media (max-width: $md760) {  left: 400px; top: -17px;};
-      @media (max-width: $md500) {  left: 300px; top: -17px;};
+      @media (max-width: $md500) {  left: 250px; top: -17px;};
       @media (max-width: $md300) {  display: none;} 
     }
     .sngegg{
@@ -454,12 +462,11 @@ main{
     padding-top: 100px;
     height: auto; 
     background-color: #171b1b;
-
+    padding-bottom: 50px;
     .pretitle, .title, .content{
       color:#FFF;
       
     }
-    @media (max-width: $md1440){  padding-bottom: 50px;}
     @media (max-width: $md300) {  padding-top: 50px;}
 
     .product-grid {
@@ -467,23 +474,36 @@ main{
         grid-template-rows: 352px 352px ;
         grid-template-columns: 270px 270px 270px 270px;
         gap: 30px;
-        margin: 69px 135px 0px 135px;
+        margin-top: 69px;
         block-size: auto;
         @media (max-width: $md1440) {
-          grid-template-rows: 352px 352px 352px 352px;
-          grid-template-columns: 270px 270px;
+          grid-template-rows: 352px 352px 352px;
+          grid-template-columns: 270px 270px 270px;
         }
+        @media (max-width: $md1000 ) {
+          grid-template-rows: 400px 300px 300px;
+          grid-template-columns: 270px 270px;
+          margin: 69px 0 0 0;
+        } 
+        @media (max-width: $md760 ) {
+          grid-template-rows: 400px 300px 300px 300px 300px;
+          grid-template-columns: 400px;
+          margin: 69px 0 0 0;
+        }       
         @media (max-width: $md500) {
+          grid-template-rows: 400px 300px 300px 300px 300px;
+          grid-template-columns: 400px;
+          margin: 69px 0 0 0;
+        }
+        @media (max-width: 400px) {
           grid-template-rows: 400px 300px 300px 300px 300px 300px;
           grid-template-columns: 100%;
           margin: 69px 0 0 0;
-          width: 100%;
         }
         @media (max-width: $md300) {
           grid-template-rows: 300px 300px 300px 300px 300px 300px;
           grid-template-columns: 100%;
           margin: 69px 0 0 0;
-          width: 100%;
         }
         .item_title{
           @include font_sans(20);
@@ -522,6 +542,12 @@ main{
           grid-column-start: 1;
           grid-row-end: 3;
           grid-column-end: 3;
+          @media (max-width: $md760) {
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-row-end: 3;
+            grid-column-end: 2;
+          }
           @media (max-width: $md500) {
             grid-row-start: 1;
             grid-column-start: 1;
@@ -529,10 +555,10 @@ main{
             grid-column-end: 2;
           }
 
-          .pic{
-            padding-left: 112px;
-            @media (max-width: $md1440) { padding-left: 0px; margin: 0 auto;      }
-          }
+          .pic{ 
+            video{
+              margin: 0 auto;
+            }}
           .content{
             flex: 0 0 0px;
             max-height: 0px;
@@ -549,6 +575,18 @@ main{
           background-size: 270px;
           border: #000 1px solid;
           @media (max-width: $md1440) {
+            grid-row-start: 1;
+            grid-column-start: 3;
+            grid-row-end: 2;
+            grid-column-end: 4;
+          }
+          @media (max-width: $md1000) {
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-row-end: 4;
+            grid-column-end: 2;
+          }
+          @media (max-width: $md760) {
             grid-row-start: 3;
             grid-column-start: 1;
             grid-row-end: 4;
@@ -575,10 +613,22 @@ main{
           background-size: 350px;
           border: #000 1px solid;
           @media (max-width: $md1440) {
+            grid-row-start: 2;
+            grid-column-start: 3;
+            grid-row-end: 3;
+            grid-column-end: 4;
+          }
+          @media (max-width: $md1000) {
             grid-row-start: 3;
             grid-column-start: 2;
             grid-row-end: 4;
             grid-column-end: 3;
+          }
+          @media (max-width: $md760) {
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-row-end: 5;
+            grid-column-end: 2;
           }
           @media (max-width: $md500) {
             grid-row-start: 4;
@@ -601,9 +651,21 @@ main{
           background-size: 500px;
           border: #000 1px solid;
           @media (max-width: $md1440) {
+            grid-row-start: 3;
+            grid-column-start: 2;
+            grid-row-end: 4;
+            grid-column-end: 3;
+          }
+          @media (max-width: $md1000) {
             grid-row-start: 4;
             grid-column-start: 1;
             grid-row-end: 5;
+            grid-column-end: 2;
+          }
+          @media (max-width: $md760) {
+            grid-row-start: 5;
+            grid-column-start: 1;
+            grid-row-end: 6;
             grid-column-end: 2;
           }
           @media (max-width: $md500) {
@@ -627,10 +689,22 @@ main{
           background-size: 500px;
           border: #000 1px solid;
           @media (max-width: $md1440) {
+            grid-row-start: 3;
+            grid-column-start: 3;
+            grid-row-end: 4;
+            grid-column-end: 4;
+          }
+          @media (max-width: $md1000) {
             grid-row-start: 4;
             grid-column-start: 2;
             grid-row-end: 5;
             grid-column-end: 3;
+          }
+          @media (max-width: $md760) {
+            grid-row-start: 6;
+            grid-column-start: 1;
+            grid-row-end: 7;
+            grid-column-end: 2;
           }
           @media (max-width: $md500) {
             grid-row-start: 6;
@@ -720,7 +794,7 @@ main{
       padding-left: 48px;
       padding-right: 48px;
       @media (max-width: $md1440) {    background-color: #FBB65F;}
-      @media (max-width: $md300) {height: 460px; width: 280px; padding: 0;}
+      @media (max-width: $md760) {height: 460px; width: 280px; padding-left: 0px; padding-right: 0px; }
       &_header{
         padding-top: 48px;
         height: 102px;
@@ -1013,24 +1087,19 @@ footer {
     color: hsla(0, 0%, 100%, 0.5);
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     font-family: 'Noto Sans';
     font-size: 16px;
     line-height: 32px;
     margin-top: 50px;
     .copyright {
-      flex: 0 0 500px;
       text-align: left;
       min-height: 50px;
       max-width: 500px;
-      padding-left: 135px;
-      padding-top: 25px;
       a{
         color: hsla(0, 0%, 100%, 0.5);
         text-decoration: underline;
       }
-      @media (max-width: $md500) { padding: 30px; height: 100px;     flex: 0 0 300px;}
-      @media (max-width: $md300) { font-size: 12px; padding: 0; height: 100px;     flex: 0 0 280px;}
-
     }
     .policy {
       display: none;
