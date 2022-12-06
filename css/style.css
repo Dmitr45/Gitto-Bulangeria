@@ -2059,7 +2059,13 @@ footer .footer_menu .col_3 .soc_icon svg[index=I] {
   padding-top: 5px;
   fill: #FFF;
 }
-footer .footer_menu .col_3 .soc_icon svg[index=T] {
+footer .footer_menu .col_3 .soc_icon svg[index=TV] {
+  height: 16px;
+  width: 16px;
+  padding-top: 5px;
+  fill: #FFF;
+}
+footer .footer_menu .col_3 .soc_icon svg[index=TG] {
   height: 16px;
   width: 16px;
   padding-top: 5px;
