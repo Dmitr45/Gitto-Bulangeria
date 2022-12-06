@@ -33,6 +33,11 @@ html{
 p{ 
   font-size: $fontSizeText; 
   block-size: auto;
+  text-indent: 40px;
+  &::first-letter{
+  font-size: 30px;
+  text-transform: capitalize;
+  }
 }
 
 @mixin font_oswald($fs) { 
@@ -400,21 +405,23 @@ main{
       position: absolute;
       @media (max-width: $md1000) {position: static; display: inline-block;};
       &[alt="baguette"]{
-        width: 400px;
+        width: 300px;
         height: 400px;
         top: 224px;
-        left: 205px;
+        left: 300px;
         z-index: 100;
+        border-radius: 20px;
         @media (max-width: $md1000) {width: 150px; height: 150px;}
         @media (max-width: $md300) { display: none;}
  
       }
       &[alt="loaf"]{
-        width: 370px;
-        height: 304px;
+        width: 320px;
+        height: 400px;
         left: 135px;
         top: 0;
         z-index: 50;
+        border-radius: 20px;
         @media (max-width: $md1000) {width: 150px; height: 150px;}
         @media (max-width: $md300) { display: none;}
       }
@@ -471,22 +478,22 @@ main{
 
     .product-grid {
         display: grid; 
-        grid-template-rows: 352px 352px ;
+        grid-template-rows: 352px 352px 352px 352px ;
         grid-template-columns: 270px 270px 270px 270px;
         gap: 30px;
         margin-top: 69px;
         block-size: auto;
         @media (max-width: $md1440) {
-          grid-template-rows: 352px 352px 352px;
+          grid-template-rows: 352px 352px 352px 352px 352px;
           grid-template-columns: 270px 270px 270px;
         }
         @media (max-width: $md1000 ) {
-          grid-template-rows: 400px 300px 300px;
+          grid-template-rows: 400px 300px 300px 300px 300px 300px 300px 300px;
           grid-template-columns: 270px 270px;
           margin: 69px 0 0 0;
         } 
         @media (max-width: $md760 ) {
-          grid-template-rows: 400px 300px 300px 300px 300px;
+          grid-template-rows: 400px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
           grid-template-columns: 400px;
           margin: 69px 0 0 0;
         }       
@@ -509,7 +516,8 @@ main{
           @include font_sans(20);
           color:#000;
           line-height: 20px;
-          padding: 32px;
+          padding-left: 32px;
+          padding-top: 10px;
           @media (max-width: $md300) {font-size: 16px; line-height: 16px; padding: 16px;};
         }
         .item_pretitle{
@@ -526,8 +534,8 @@ main{
               flex: 1 1 200px;
             }
             .content{
-              flex: 0 0 144px;
-              max-height: 144px;
+              flex: 0 0 80px;
+              max-height: 80px;
               background-color: #FFF;
               @media (max-width: $md500) { flex: 0 0 100px; max-height: 100px;}
               .pretitle, .title, .content{
@@ -570,7 +578,7 @@ main{
           grid-column-start: 3;
           grid-row-end: 2;
           grid-column-end: 4;
-          background-image: url( "../img/product/baked.JPG");
+          background-image: url("../img/product/Багет.png");
           background-position: bottom;
           background-size: 270px;
           border: #000 1px solid;
@@ -592,12 +600,6 @@ main{
             grid-row-end: 4;
             grid-column-end: 2;
           }
-          @media (max-width: $md500) {
-            grid-row-start: 3;
-            grid-column-start: 1;
-            grid-row-end: 4;
-            grid-column-end: 2;
-          }
           &:hover{
             border: #FFF 1px solid;
           }
@@ -608,9 +610,10 @@ main{
           grid-column-start: 4;
           grid-row-end: 2;
           grid-column-end: 5;
-          background-image: url( "../img/product/baguette.JPG");
+          //background-image: url( "../img/product/baguette.JPG");
+          background-image: url("../img/product/Брауни.jpg");
           background-position: top;
-          background-size: 350px;
+          background-size: 300px;
           border: #000 1px solid;
           @media (max-width: $md1440) {
             grid-row-start: 2;
@@ -625,12 +628,6 @@ main{
             grid-column-end: 3;
           }
           @media (max-width: $md760) {
-            grid-row-start: 4;
-            grid-column-start: 1;
-            grid-row-end: 5;
-            grid-column-end: 2;
-          }
-          @media (max-width: $md500) {
             grid-row-start: 4;
             grid-column-start: 1;
             grid-row-end: 5;
@@ -652,9 +649,9 @@ main{
           border: #000 1px solid;
           @media (max-width: $md1440) {
             grid-row-start: 3;
-            grid-column-start: 2;
+            grid-column-start: 1;
             grid-row-end: 4;
-            grid-column-end: 3;
+            grid-column-end: 2;
           }
           @media (max-width: $md1000) {
             grid-row-start: 4;
@@ -663,12 +660,6 @@ main{
             grid-column-end: 2;
           }
           @media (max-width: $md760) {
-            grid-row-start: 5;
-            grid-column-start: 1;
-            grid-row-end: 6;
-            grid-column-end: 2;
-          }
-          @media (max-width: $md500) {
             grid-row-start: 5;
             grid-column-start: 1;
             grid-row-end: 6;
@@ -686,13 +677,13 @@ main{
           grid-column-end: 4;
           background-image: url( "../img/product/flower.jpg");
           background-position: bottom;
-          background-size: 500px;
+          background-size: 400px;
           border: #000 1px solid;
           @media (max-width: $md1440) {
             grid-row-start: 3;
-            grid-column-start: 3;
+            grid-column-start: 2;
             grid-row-end: 4;
-            grid-column-end: 4;
+            grid-column-end: 3;
           }
           @media (max-width: $md1000) {
             grid-row-start: 4;
@@ -706,16 +697,262 @@ main{
             grid-row-end: 7;
             grid-column-end: 2;
           }
-          @media (max-width: $md500) {
-            grid-row-start: 6;
-            grid-column-start: 1;
-            grid-row-end: 7;
-            grid-column-end: 2;
-          }
           &:hover{
             border: #FFF 1px solid;
           }
               }
+          #item-5 {
+            background-color: #A7DE99; 
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-row-end: 4;
+            grid-column-end: 2;
+            background-image: url( "../img/product/Кампань.jpg");
+            background-position: bottom;
+            background-size: 350px;
+            border: #000 1px solid;
+            @media (max-width: $md1440) {
+              grid-row-start: 3;
+              grid-column-start: 3;
+              grid-row-end: 4;
+              grid-column-end: 4;
+            }
+            @media (max-width: $md1000) {
+              grid-row-start: 5;
+              grid-column-start: 1;
+              grid-row-end: 6;
+              grid-column-end: 2;
+            }
+            @media (max-width: $md760) {
+              grid-row-start: 7;
+              grid-column-start: 1;
+              grid-row-end: 8;
+              grid-column-end: 2;
+            }
+            &:hover{
+              border: #FFF 1px solid;
+            }
+          }
+          #item-6 {
+            background-color: #A7DE99; 
+            grid-row-start: 3;
+            grid-column-start: 2;
+            grid-row-end: 4;
+            grid-column-end: 3;
+            background-image: url( "../img/product/Круасcан.jpg");
+            background-position: bottom;
+            background-size: 350px;
+            border: #000 1px solid;
+            @media (max-width: $md1440) {
+              grid-row-start: 4;
+              grid-column-start: 1;
+              grid-row-end: 5;
+              grid-column-end: 2;
+            }
+            @media (max-width: $md1000) {
+              grid-row-start: 5;
+              grid-column-start: 2;
+              grid-row-end: 6;
+              grid-column-end: 3;
+            }
+            @media (max-width: $md760) {
+              grid-row-start: 8;
+              grid-column-start: 1;
+              grid-row-end: 9;
+              grid-column-end: 2;
+            }
+            &:hover{
+              border: #FFF 1px solid;
+            }
+          }
+          #item-7 {
+            background-color: #A7DE99; 
+            grid-row-start: 3;
+            grid-column-start: 3;
+            grid-row-end: 4;
+            grid-column-end: 4;
+            background-image: url( "../img/product/МиндальныйКруасcан.jpg");
+            background-position: bottom;
+            background-size: 350px;
+            border: #000 1px solid;
+            @media (max-width: $md1440) {
+              grid-row-start: 4;
+              grid-column-start: 2;
+              grid-row-end: 5;
+              grid-column-end: 3;
+            }
+            @media (max-width: $md1000) {
+              grid-row-start: 6;
+              grid-column-start: 1;
+              grid-row-end: 7;
+              grid-column-end: 2;
+            }
+            @media (max-width: $md760) {
+              grid-row-start: 9;
+              grid-column-start: 1;
+              grid-row-end: 10;
+              grid-column-end: 2;
+            }
+            &:hover{
+              border: #FFF 1px solid;
+            }
+          }
+          #item-8 {
+            background-color: #A7DE99; 
+            grid-row-start: 3;
+            grid-column-start: 4;
+            grid-row-end: 4;
+            grid-column-end: 5;
+            background-image: url( "../img/product/Ржаной.jpg");
+            background-position: bottom;
+            background-size: 500px;
+            border: #000 1px solid;
+            @media (max-width: $md1440) {
+              grid-row-start: 4;
+              grid-column-start: 3;
+              grid-row-end: 5;
+              grid-column-end: 4;
+            }
+            @media (max-width: $md1000) {
+              grid-row-start: 6;
+              grid-column-start: 2;
+              grid-row-end: 7;
+              grid-column-end: 3;
+            }
+            @media (max-width: $md760) {
+              grid-row-start: 10;
+              grid-column-start: 1;
+              grid-row-end: 11;
+              grid-column-end: 2;
+            }
+            &:hover{
+              border: #FFF 1px solid;
+            }
+          }
+          #item-9 {
+            background-color: #A7DE99; 
+            grid-row-start: 4;
+            grid-column-start: 4;
+            grid-row-end: 5;
+            grid-column-end: 5;
+            background-image: url( "../img/product/КруаcсанНачинкой.png");
+            background-position: bottom;
+            background-size: 350px;
+            border: #000 1px solid;
+            @media (max-width: $md1440) {
+              grid-row-start: 5;
+              grid-column-start: 1;
+              grid-row-end: 6;
+              grid-column-end: 2;
+            }
+            @media (max-width: $md1000) {
+              grid-row-start: 7;
+              grid-column-start: 1;
+              grid-row-end: 8;
+              grid-column-end: 2;
+            }
+            @media (max-width: $md760) {
+              grid-row-start: 11;
+              grid-column-start: 1;
+              grid-row-end: 12;
+              grid-column-end: 2;
+            }
+            &:hover{
+              border: #FFF 1px solid;
+            }
+          }
+          #item-10 {
+            background-color: #A7DE99; 
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-row-end: 5;
+            grid-column-end: 2;
+            background-image: url( "../img/product/ПшеничноРжаной.jpg");
+            background-position: bottom;
+            background-size: 500px;
+            border: #000 1px solid;
+            @media (max-width: $md1440) {
+              grid-row-start: 5;
+              grid-column-start: 2;
+              grid-row-end: 6;
+              grid-column-end: 3;
+            }
+            @media (max-width: $md1000) {
+              grid-row-start: 7;
+              grid-column-start: 2;
+              grid-row-end: 8;
+              grid-column-end: 3;
+            }
+            @media (max-width: $md760) {
+              grid-row-start: 12;
+              grid-column-start: 1;
+              grid-row-end: 13;
+              grid-column-end: 2;
+            }
+            &:hover{
+              border: #FFF 1px solid;
+            }
+          }
+          #item-11 {
+            background-color: #A7DE99; 
+            grid-row-start: 4;
+            grid-column-start: 3;
+            grid-row-end: 5;
+            grid-column-end: 4;
+            background-image: url( "../img/product/baguette.JPG");
+            background-position: bottom;
+            background-size: 500px;
+            border: #000 1px solid;
+            @media (max-width: $md1440) {
+              grid-row-start: 5;
+              grid-column-start: 3;
+              grid-row-end: 6;
+              grid-column-end: 4;
+            }
+            @media (max-width: $md1000) {
+              grid-row-start: 8;
+              grid-column-start: 1;
+              grid-row-end: 9;
+              grid-column-end: 2;
+            }
+            @media (max-width: $md760) {
+              grid-row-start: 13;
+              grid-column-start: 1;
+              grid-row-end: 14;
+              grid-column-end: 2;
+            }
+            &:hover{
+              border: #FFF 1px solid;
+            }
+          }
+          #item-12 {
+            background-color: #A7DE99; 
+            grid-row-start: 4;
+            grid-column-start: 2;
+            grid-row-end: 5;
+            grid-column-end: 3;
+            background-image: url( "../img/product/Бриоши.jpg");
+            background-position: center;
+            background-size: 450px;
+            border: #000 1px solid;
+            @media (max-width: $md1440) {
+            }
+            @media (max-width: $md1000) {
+              grid-row-start: 8;
+              grid-column-start: 2;
+              grid-row-end: 9;
+              grid-column-end: 3;
+            }
+            @media (max-width: $md760) {
+              grid-row-start: 6;
+              grid-column-start: 1;
+              grid-row-end: 7;
+              grid-column-end: 2;
+            }
+            &:hover{
+              border: #FFF 1px solid;
+            }
+          }
   }
 }
 
@@ -906,6 +1143,7 @@ main{
           left: 135px;
           top: 28px;
           z-index: 100;
+          border-radius: 20px 50px 20px 50px;
         }
         &[alt="Shape"]{
           width: 154px;
