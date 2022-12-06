@@ -1020,7 +1020,7 @@ main .about .about_pic img[alt=Shape] {
 }
 main .about .about_content {
   width: 720px;
-  height: 660px;
+  min-height: 660px;
 }
 @media (max-width: 1439px) {
   main .about .about_content {
@@ -1042,6 +1042,9 @@ main .product .wrapper {
 }
 main .product .wrapper .pretitle, main .product .wrapper .title, main .product .wrapper .content {
   color: #FFF;
+}
+main .product .wrapper div, main .product .wrapper .content {
+  border-radius: 20px;
 }
 @media (max-width: 299px) {
   main .product .wrapper {
