@@ -1209,6 +1209,7 @@ main .product .wrapper #item-1 {
     grid-column-start: 1;
     grid-row-end: 4;
     grid-column-end: 2;
+    background-size: 360px;
   }
 }
 main .product .wrapper #item-1:hover {
@@ -1247,6 +1248,7 @@ main .product .wrapper #item-2 {
     grid-column-start: 1;
     grid-row-end: 5;
     grid-column-end: 2;
+    background-size: 360px;
   }
 }
 main .product .wrapper #item-2:hover {
@@ -2020,11 +2022,9 @@ footer .footer_menu .col_title {
   line-height: 32px;
   text-transform: uppercase;
 }
-footer .footer_menu p {
-  cursor: pointer;
-}
-footer .footer_menu a {
+footer .footer_menu span a {
   color: #FFF;
+  cursor: pointer;
 }
 footer .footer_menu .col_1 {
   margin-top: 73px;

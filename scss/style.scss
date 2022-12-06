@@ -599,6 +599,7 @@ main{
             grid-column-start: 1;
             grid-row-end: 4;
             grid-column-end: 2;
+            background-size: 360px;
           }
           &:hover{
             border: #FFF 1px solid;
@@ -632,6 +633,7 @@ main{
             grid-column-start: 1;
             grid-row-end: 5;
             grid-column-end: 2;
+            background-size: 360px;
           }
           &:hover{
             border: #FFF 1px solid;
@@ -1261,12 +1263,13 @@ footer {
         line-height: 32px;
         text-transform: uppercase;
       }
-      p{
-        cursor: pointer;
-      }
+      span{
+        
+      
       a{
         color:#FFF;
-      }
+        cursor: pointer;
+      }}
     .col {
       &_1 {
         margin-top: 73px;
