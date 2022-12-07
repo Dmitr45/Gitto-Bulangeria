@@ -545,11 +545,6 @@ section {
     min-width: 280px;
   }
 }
-@media (max-width: 299px) {
-  ._container {
-    min-width: 280px;
-  }
-}
 
 .rotateY180 {
   transform: rotateY(180deg);
@@ -564,12 +559,13 @@ header {
 }
 @media (max-width: 991.98px) {
   header {
-    height: 1120px;
+    height: 930px;
   }
 }
 @media (max-width: 549.98px) {
   header {
-    height: 910px;
+    height: 1170px;
+    min-width: 280px;
   }
 }
 
@@ -714,11 +710,17 @@ nav .button_contact button:hover span {
 
 #Presentation {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   height: 791px;
 }
 @media (max-width: 991.98px) {
   #Presentation {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 549.98px) {
+  #Presentation {
+    flex-flow: row wrap;
     margin-top: 48px;
     height: 400px;
   }
@@ -726,15 +728,14 @@ nav .button_contact button:hover span {
 
 .elem_text {
   flex: 1 1 720px;
-  max-width: 720px;
   background-color: hsla(32deg, 46%, 83%, 0.44);
 }
-@media (max-width: 1439px) {
+@media (max-width: 991.98px) {
   .elem_text {
-    max-width: 50vw;
+    max-width: 500px;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 549.98px) {
   .elem_text {
     max-width: 100%;
     height: 500px;
@@ -794,24 +795,21 @@ nav .button_contact button:hover span {
 }
 .elem_pic {
   flex: 1 1 720px;
-  max-width: 720px;
-  background-image: url(../img/baker.jpg);
-  background-size: cover;
+  max-width: 650px;
+  background-image: url(../img/HomePic.png);
+  background-size: 650px;
+  background-position: center center;
 }
 @media (max-width: 1439px) {
   .elem_pic {
-    max-width: 50vw;
-  }
-}
-@media (max-width: 991.98px) {
-  .elem_pic {
-    max-width: 100%;
-    height: 500px;
+    max-width: 630px;
   }
 }
 @media (max-width: 549.98px) {
   .elem_pic {
-    height: 300px;
+    background-size: 550px;
+    max-width: 100%;
+    height: 550px;
   }
 }
 
@@ -886,7 +884,7 @@ nav .button_contact button:hover span {
 }
 @media (max-width: 991.98px) {
   .pres_info {
-    margin-top: 0px;
+    margin-top: 80px;
     width: 80%;
     margin-left: 10%;
   }
@@ -894,6 +892,7 @@ nav .button_contact button:hover span {
 @media (max-width: 549.98px) {
   .pres_info {
     font-size: 12px;
+    margin-top: 0px;
   }
 }
 

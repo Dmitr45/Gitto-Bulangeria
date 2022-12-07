@@ -112,7 +112,6 @@ section{
     @media (max-width: $md1000){  min-width: $md760;}
     @media (max-width: $md760) {  min-width: $md500;}
     @media (max-width: $md500) {  min-width: 280px; } 
-    @media (max-width: $md300) {  min-width: 280px; }   
 }
 
 .rotateY180{  transform: rotateY(180deg);  }
@@ -124,8 +123,8 @@ section{
 
 header{
   height: 863px;
-  @media (max-width: $md1000) {height: 1120px;}
-  @media (max-width: $md500)  {height: 910px;}
+  @media (max-width: $md1000) {height: 930px;}
+  @media (max-width: $md500)  {height: 1170px; min-width: 280px;}
 }
 
 nav{
@@ -269,19 +268,21 @@ flex: 0 0 470px;
 
 #Presentation{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     height: 791px;
-    @media (max-width: $md1000){ margin-top: 48px; height: 400px; }
+    @media (max-width: $md1000){ margin-top: 60px;}
+    @media (max-width: $md500){     flex-flow: row wrap; margin-top: 48px; height: 400px; }
 
 }
 .elem {
 
     &_text {
         flex: 1 1 720px;
-        max-width: 720px;
+        //max-width: 720px;
         background-color: hsla(32, 46%, 83%, 0.44);
-        @media (max-width: $md1440) {max-width: 50vw;}
-        @media (max-width: $md1000){ max-width: 100%; height: 500px; }
+        //@media (max-width: $md1440) {max-width: 50vw;}
+        @media (max-width: $md1000){ max-width: 500px; }
+        @media (max-width: $md500){ max-width: 100%; height: 500px; }
         @media (max-width: $md300) {};
     .img_background{
       height: 0px;
@@ -318,12 +319,15 @@ flex: 0 0 470px;
 
     &_pic {
         flex: 1 1 720px;
-        max-width: 720px;
-        background-image: url(../img/baker.jpg);
-        background-size: cover;
-        @media (max-width: $md1440){ max-width: 50vw;}
-        @media (max-width: $md1000){ max-width: 100%; height: 500px; }
-        @media (max-width: $md500) {height: 300px;}
+        max-width: 650px;
+        //background-image: url(../img/baker.jpg);
+        background-image: url(../img/HomePic.png);
+        background-size: 650px;
+        background-position: center center;
+        @media (max-width: $md1440){ max-width: 630px;}
+        //@media (max-width: $md1000){ max-width: 100%; height: 500px; }
+        @media (max-width: $md500){ background-size: 550px; max-width: 100%; height: 550px; }
+        //@media (max-width: $md500) {height: 300px;}
     }
 }
 .pres {
@@ -366,8 +370,8 @@ flex: 0 0 470px;
       font-weight: 600;
       text-align: justify;
       @media ( max-width: $md1440) { margin-left: 50px; width: 400px;}
-      @media (max-width: $md1000){ margin-top: 0px;  width: 80%; margin-left: 10%;}  
-      @media (max-width: $md500){ font-size: 12px; }
+      @media (max-width: $md1000){ margin-top: 80px;  width: 80%; margin-left: 10%;}  
+      @media (max-width: $md500){ font-size: 12px;  margin-top: 0px;}
     }
 }
 
